@@ -8,8 +8,10 @@ function App() {
   return (
     <>
       <Infos/>
-      <About/>
-      <Interests/>
+      <main>
+        <About/>
+        <Interests/>
+      </main>
       <Footer/>
     </>
   )

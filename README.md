@@ -1,69 +1,151 @@
-# React + TypeScript + Vite
+# Digital Business Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Version](https://img.shields.io/github/package-json/v/bakadja/digital-business-card)](https://github.com/bakadja/digital-business-card)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Currently, two official plugins are available:
+A modern, responsive digital business card built with **React**, **TypeScript**, and **Vite**. Easily showcase your professional profile, contact information, and social links with a clean and elegant design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [Features](#features)
+- [Demo](#demo)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running Locally](#running-locally)
+  - [Building for Production](#building-for-production)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ⚡ **Fast**: Powered by Vite for instant development feedback.
+- 🎨 **Modern UI**: Clean, responsive design using CSS Grid and Flexbox.
+- 🛠️ **TypeScript**: Type-safe codebase for reliability and maintainability.
+- 🔗 **Social Links**: Easily customizable social media and contact buttons.
+- 📱 **Responsive**: Looks great on all devices.
+
+---
+
+## Demo
+
+> **Live Demo:** [View on Netlify](https://)  
+---
+
+## Screenshots
+
+![Digital Business Card Screenshot](public/preview.png)
+
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/bakadja/digital-business-card.git
+cd digital-business-card
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+# or
+yarn install
 ```
+
+### Running Locally
+
+Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+### Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+# or
+yarn preview
+```
+
+---
+
+## Project Structure
+
+```
+digital-business-card/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── ...
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m 'Add your feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a pull request.
+
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## Acknowledgements
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Font: Inter](https://fonts.google.com/specimen/Inter)
+- [Heroicons](https://heroicons.com/) (for social icons)
+
+---

@@ -111,7 +111,9 @@ header a {
     color: #374151;
     font-size: .875rem;
 }
-
+header a:hover {
+    text-decoration: underline;
+}
 /*Main*/
 main {
     display: grid;
@@ -141,4 +143,8 @@ footer {
 .social-icons {
     display: flex;
     gap: 1.5em;
+}
+
+footer a:hover {
+    transform: scale(1.3);
 }

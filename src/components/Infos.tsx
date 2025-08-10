@@ -20,7 +20,7 @@ export default function Infos() {
         </a>
         <a 
           className="btn-right"
-          href="mailto:contact@kevinpaulidor.de" 
+          href="https://linkedin.com/" 
           target="_blank" 
           rel="noopener noreferrer"
           >

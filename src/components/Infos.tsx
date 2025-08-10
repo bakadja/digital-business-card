@@ -1,7 +1,7 @@
 import profilImg from "../assets/images/profil.png";
 import emailLogo from "../assets/images/Mail.svg"
 import linkedinLogo from "../assets/images/linkedin.svg"
-
+//TODO: ajouter un effect ou animation pour les anchors eleement
 
 export default function Infos() {
   return (
@@ -10,14 +10,24 @@ export default function Infos() {
       <h1>Laura Smith</h1>
       <p>Frontend Developer</p>
       <span>laurasmith.website</span>
-      <button type="button" className="btn-left">
-        <img src={emailLogo} alt="email logo" />
-        <span>Email</span>
-      </button>
-      <button type="button" className="btn-right">
-        <img src={linkedinLogo} alt="linkedin logo" />
-        <span>LinkedIn</span>
-        </button>
+        <a 
+          className="btn-left"
+          href="mailto:contact@kevinpaulidor.de" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          >
+          <img src={emailLogo} alt="email logo" />
+          <span>Email</span>
+        </a>
+        <a 
+          className="btn-right"
+          href="mailto:contact@kevinpaulidor.de" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          >
+          <img src={linkedinLogo} alt="linkedin logo" />
+          <span>LinkedIn</span>
+        </a>
     </header>
   );
 }

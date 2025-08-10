@@ -20,23 +20,20 @@ div#root {
     grid-template-columns: 2.25em repeat(2,1fr) 2.25em;
     grid-template-areas: 
     "h h h h"
-    ". a a ."
-    ". i i ."
-    ". f f ."
+    ". m m ."
+    ". m m ."
+    "f f f f"
     ;
     background-color:#1A1B21;
+    gap: 2em 0;
 }
 
 header {
     grid-area: h;
 }
 
-.about {
- grid-area: a;   
-}
-
-.interests {
-    grid-area: i;
+main {
+    grid-area: m;
 }
 
 footer {
@@ -46,6 +43,15 @@ footer {
 /* typography*/
 h1 {
     font-size: 1.56rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: #F5F5F5;;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Header */
@@ -91,9 +97,8 @@ header > span {
     color: white;
 }
 
-header button {
-    width: 6rem;
-    height: 2rem;
+header a {
+    width: 7rem;
     display: flex;
     align-items: center;
     gap: .5em;
@@ -103,8 +108,37 @@ header button {
     border-radius: 0.375rem;
     background: #FFF;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    color: #374151;
+    font-size: .875rem;
 }
 
+/*Main*/
+main {
+    display: grid;
+    gap: 1.7em;
+}
 
+section {
+    color: #DCDCDC;
+}
 
+section > p {
+    margin-top: 0.3em;
+    font-size:  0.64rem;
+    line-height: 1.5;
+}
 
+/*Footer*/
+
+footer {
+    height: 4rem;
+    display: grid;
+    place-content: center;
+    border-radius: 0 0 0.625rem 0.625rem;
+    background: #161619;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5em;
+}

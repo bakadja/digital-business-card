@@ -1,7 +1,6 @@
 import profilImg from "../assets/images/profil.png";
 import emailLogo from "../assets/images/Mail.svg"
 import linkedinLogo from "../assets/images/linkedin.svg"
-//TODO: ajouter un effect ou animation pour les anchors eleement
 
 export default function Infos() {
   return (

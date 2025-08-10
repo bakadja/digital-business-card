@@ -1,4 +1,8 @@
-import profilImg from "../assets/images/profil.png"
+import profilImg from "../assets/images/profil.png";
+import emailLogo from "../assets/images/Mail.svg"
+import linkedinLogo from "../assets/images/linkedin.svg"
+
+
 export default function Infos() {
   return (
     <header>
@@ -6,10 +10,14 @@ export default function Infos() {
       <h1>Laura Smith</h1>
       <p>Frontend Developer</p>
       <span>laurasmith.website</span>
-      <div >
-        <button type="button">Email</button>
-        <button type="button">LinkedIn</button>
-      </div>
+      <button type="button" className="btn-left">
+        <img src={emailLogo} alt="email logo" />
+        <span>Email</span>
+      </button>
+      <button type="button" className="btn-right">
+        <img src={linkedinLogo} alt="linkedin logo" />
+        <span>LinkedIn</span>
+        </button>
     </header>
-  )
+  );
 }

@@ -10,49 +10,93 @@
 body {
     display: grid;
     place-content: center;
-
+    background: #23252C;
+    min-height: 100vh;
 }
 div#root {
-    width: 550px;
-    padding: 2.75em 9.4em;
-    min-height: 96vh;
-    background: #23252C;
-     font-family: "Inter", sans-serif;
+    width: 317px;
+    font-family: "Inter", sans-serif;
+    display: grid;
+    grid-template-columns: 2.25em repeat(2,1fr) 2.25em;
+    grid-template-areas: 
+    "h h h h"
+    ". a a ."
+    ". i i ."
+    ". f f ."
+    ;
+    background-color:#1A1B21;
+}
+
+header {
+    grid-area: h;
+}
+
+.about {
+ grid-area: a;   
+}
+
+.interests {
+    grid-area: i;
+}
+
+footer {
+    grid-area: f;
 }
 
 /* typography*/
 h1 {
     font-size: 1.56rem;
 }
+
 /* Header */
 header {
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: .39em 0;
     color: white;
     text-align: center;
 }
-header > h1,
-header > p,
-header > span {
-    margin-block: .6em;
+header > h1 {
+    grid-column: 2 / 4;
+    grid-row: 2/3;
+    padding-top: .8em;
 }
+
 header > p {
+    grid-column: 2 / 4;
+    grid-row: 3/4;
     color: #F3BF99;
     font-size: .8rem;
 }
 
 header > span {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
     color: #F5F5F5;
     display: block;
+    padding-top: .15em;
+    padding-bottom: .55em;
     font-size: .64rem;
 }
 
-header > div {
-    display: flex;
-    justify-content: space-around;
+.btn-left {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+.btn-right {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    margin-left: auto;
+    background-color: #297FE5;
+    color: white;
 }
 
 header button {
     width: 6rem;
     height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: .5em;
     border-radius: .38rem;
     padding: .56em .81em;
     border: none;

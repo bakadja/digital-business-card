@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Interests() {
   return (
-    <div>Interests</div>
+    <section className='interests'>Interests</section>
   )
 }
